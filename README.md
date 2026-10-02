@@ -4,6 +4,9 @@ A tool-calling research agent — **LangChain + OpenAI** — served over **FastA
 with a **React + TypeScript** chat UI that renders live tool-call traces, backed by **PostgreSQL**
 for conversation memory, tool logs, and response caching.
 
+<img width="836" height="471" alt="Agentic Research Assistant Dashboard (1)" src="https://github.com/user-attachments/assets/83f6efd3-a7f7-45a2-bcbb-04ec38a65668" />
+
+
 ## Features
 
 - **Agentic tool-calling loop** (max 6 iterations) over 4 tools: `web_search`, `sql_query`,
