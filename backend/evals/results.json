@@ -1,0 +1,46 @@
+{
+  "engine": "app.guards + app.router (live code)",
+  "n": 100,
+  "task_completion": 1.0,
+  "routing_acc": 1.0,
+  "unit_acc": 1.0,
+  "per_category": {
+    "calculator": {
+      "n": 25,
+      "routing": 1.0,
+      "unit": 1.0,
+      "task_completion": 1.0
+    },
+    "sql": {
+      "n": 25,
+      "routing": 1.0,
+      "unit": 1.0,
+      "task_completion": 1.0
+    },
+    "docs": {
+      "n": 25,
+      "routing": 1.0,
+      "unit": 1.0,
+      "task_completion": 1.0
+    },
+    "web": {
+      "n": 15,
+      "routing": 1.0,
+      "unit": 1.0,
+      "task_completion": 1.0
+    },
+    "multi": {
+      "n": 10,
+      "routing": 1.0,
+      "unit": 1.0,
+      "task_completion": 1.0
+    }
+  },
+  "failures": [],
+  "cache_benchmark": {
+    "cold_s": 0.0021,
+    "warm_s": 0.0001,
+    "saving_pct": 94.2,
+    "note": "offline micro-benchmark of repeated tool calls, not LLM latency"
+  }
+}

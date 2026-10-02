@@ -1,0 +1,100 @@
+{"category":"calculator","expected":"84","expected_tool":"calculator","expression":"12*7","id":"calc-01","query":"Calculate 12*7"}
+{"category":"calculator","expected":"12.0","expected_tool":"calculator","expression":"144/12","id":"calc-02","query":"What is 144/12?"}
+{"category":"calculator","expected":"46","expected_tool":"calculator","expression":"(15 + 8) * 2","id":"calc-03","query":"Compute (15 + 8) * 2"}
+{"category":"calculator","expected":"1024","expected_tool":"calculator","expression":"2**10","id":"calc-04","query":"Solve 2**10"}
+{"category":"calculator","expected":"2","expected_tool":"calculator","expression":"100 % 7","id":"calc-05","query":"Calculate 100 % 7"}
+{"category":"calculator","expected":"14.0","expected_tool":"calculator","expression":"3.5 * 4","id":"calc-06","query":"What is 3.5 * 4?"}
+{"category":"calculator","expected":"653","expected_tool":"calculator","expression":"1000 - 347","id":"calc-07","query":"Compute 1000 - 347"}
+{"category":"calculator","expected":"50","expected_tool":"calculator","expression":"(20 + 5) * (3 - 1)","id":"calc-08","query":"Calculate (20 + 5) * (3 - 1)"}
+{"category":"calculator","expected":"7","expected_tool":"calculator","expression":"-8 + 15","id":"calc-09","query":"What is -8 + 15?"}
+{"category":"calculator","expected":"729","expected_tool":"calculator","expression":"9*9*9","id":"calc-10","query":"Solve 9*9*9"}
+{"category":"calculator","expected":"12.0","expected_tool":"calculator","expression":"55/11 + 7","id":"calc-11","query":"Calculate 55/11 + 7"}
+{"category":"calculator","expected":"14","expected_tool":"calculator","expression":"2 + 3 * 4","id":"calc-12","query":"Compute 2 + 3 * 4"}
+{"category":"calculator","expected":"15.0","expected_tool":"calculator","expression":"(100 - 25) / 5","id":"calc-13","query":"What is (100 - 25) / 5?"}
+{"category":"calculator","expected":"2","expected_tool":"calculator","expression":"17 % 5","id":"calc-14","query":"Calculate 17 % 5"}
+{"category":"calculator","expected":"1000","expected_tool":"calculator","expression":"10**3","id":"calc-15","query":"Solve 10**3"}
+{"category":"calculator","expected":"144","expected_tool":"calculator","expression":"12*12","id":"calc-16","query":"12*12"}
+{"category":"calculator","expected":"100","expected_tool":"calculator","expression":"(6 + 4) * 10","id":"calc-17","query":"(6 + 4) * 10"}
+{"category":"calculator","expected":"0.75","expected_tool":"calculator","expression":"0.5 + 0.25","id":"calc-18","query":"Calculate 0.5 + 0.25"}
+{"category":"calculator","expected":"10.0","expected_tool":"calculator","expression":"200/4/5","id":"calc-19","query":"Compute 200/4/5"}
+{"category":"calculator","expected":"62","expected_tool":"calculator","expression":"7 * 8 + 6","id":"calc-20","query":"What is 7 * 8 + 6?"}
+{"category":"calculator","expected":"85","expected_tool":"calculator","expression":"(50 - 10) * 2 + 5","id":"calc-21","query":"Calculate (50 - 10) * 2 + 5"}
+{"category":"calculator","expected":"0","expected_tool":"calculator","expression":"100 - 99 - 98 + 97","id":"calc-22","query":"Solve 100 - 99 - 98 + 97"}
+{"category":"calculator","expected":"10.0","expected_tool":"calculator","expression":"25 * 4 / 10","id":"calc-23","query":"What is 25 * 4 / 10?"}
+{"category":"calculator","expected":"81","expected_tool":"calculator","expression":"3**4","id":"calc-24","query":"Compute 3**4"}
+{"category":"calculator","expected":"2","expected_tool":"calculator","expression":"(9 + 1) % 4","id":"calc-25","query":"Calculate (9 + 1) % 4"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-01","query":"Run SQL: SELECT title FROM documents LIMIT 5","sql":"SELECT title FROM documents LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-02","query":"SELECT role, content FROM messages LIMIT 10","sql":"SELECT role, content FROM messages LIMIT 10"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-03","query":"How many messages are stored? SELECT COUNT(*) FROM messages","sql":"SELECT COUNT(*) FROM messages"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-04","query":"List documents: SELECT title FROM documents LIMIT 5","sql":"SELECT title FROM documents LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-05","query":"Show tool logs: SELECT tool_name FROM tool_logs LIMIT 5","sql":"SELECT tool_name FROM tool_logs LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-06","query":"Query the database: SELECT content FROM documents WHERE title ILIKE '%cache%'","sql":"SELECT content FROM documents WHERE title ILIKE '%cache%'"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-07","query":"SELECT tool_name, latency_ms FROM tool_logs ORDER BY latency_ms DESC LIMIT 5","sql":"SELECT tool_name, latency_ms FROM tool_logs ORDER BY latency_ms DESC LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-08","query":"Count rows: SELECT COUNT(*) FROM documents","sql":"SELECT COUNT(*) FROM documents"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-09","query":"SELECT title, source_url FROM documents WHERE source_url IS NOT NULL LIMIT 5","sql":"SELECT title, source_url FROM documents WHERE source_url IS NOT NULL LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-10","query":"How many tool calls failed? SELECT COUNT(*) FROM tool_logs WHERE status = 'error'","sql":"SELECT COUNT(*) FROM tool_logs WHERE status = 'error'"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-11","query":"SELECT content FROM messages WHERE role = 'user' LIMIT 3","sql":"SELECT content FROM messages WHERE role = 'user' LIMIT 3"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-12","query":"Show message counts per conversation: SELECT conversation_id FROM messages LIMIT 5","sql":"SELECT conversation_id FROM messages LIMIT 5"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-13","query":"SELECT title FROM documents WHERE content ILIKE '%SSE%' LIMIT 3","sql":"SELECT title FROM documents WHERE content ILIKE '%SSE%' LIMIT 3"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-14","query":"Query the database for recent errors: SELECT tool_name FROM tool_logs ORDER BY created_at DESC LIMIT 3","sql":"SELECT tool_name FROM tool_logs ORDER BY created_at DESC LIMIT 3"}
+{"category":"sql","expected_allowed":true,"expected_tool":"sql_query","id":"sql-15","query":"SELECT COUNT(*) FROM tool_logs WHERE latency_ms > 100","sql":"SELECT COUNT(*) FROM tool_logs WHERE latency_ms > 100"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-16","query":"Run SQL: SELECT * FROM users LIMIT 5","sql":"SELECT * FROM users LIMIT 5"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-17","query":"SELECT * FROM documents; DROP TABLE documents","sql":"SELECT * FROM documents; DROP TABLE documents"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-18","query":"Run SQL: DELETE FROM messages WHERE 1=1","sql":"DELETE FROM messages WHERE 1=1"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-19","query":"Run SQL: INSERT INTO documents(title) VALUES('x')","sql":"INSERT INTO documents(title) VALUES('x')"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-20","query":"Run SQL: UPDATE messages SET content='x'","sql":"UPDATE messages SET content='x'"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-21","query":"Run SQL: DROP TABLE tool_logs","sql":"DROP TABLE tool_logs"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-22","query":"Run SQL: SELECT password FROM users","sql":"SELECT password FROM users"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-23","query":"Run SQL: SELECT * FROM pg_shadow","sql":"SELECT * FROM pg_shadow"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-24","query":"Run SQL: ALTER TABLE documents ADD COLUMN x TEXT","sql":"ALTER TABLE documents ADD COLUMN x TEXT"}
+{"category":"sql","expected_allowed":false,"expected_tool":"sql_query","id":"sql-25","query":"Run SQL: GRANT ALL ON documents TO public","sql":"GRANT ALL ON documents TO public"}
+{"category":"docs","expected_doc":"LangChain Tool Calling","expected_tool":"document_retrieval","id":"doc-01","query":"How does LangChain tool calling interleave reasoning with invocations?"}
+{"category":"docs","expected_doc":"SSE Streaming","expected_tool":"document_retrieval","id":"doc-02","query":"Explain how our SSE streaming sends tokens to the browser"}
+{"category":"docs","expected_doc":"Postgres Memory Schema","expected_tool":"document_retrieval","id":"doc-03","query":"Describe the Postgres schema for conversations and messages"}
+{"category":"docs","expected_doc":"Caching Strategy","expected_tool":"document_retrieval","id":"doc-04","query":"What TTL does the response cache use and how does caching cut latency?"}
+{"category":"docs","expected_doc":"Prompt Optimization","expected_tool":"document_retrieval","id":"doc-05","query":"Why does history truncation in the system prompt reduce token usage?"}
+{"category":"docs","expected_doc":"Frontend Chat UI","expected_tool":"document_retrieval","id":"doc-06","query":"How does the React chat UI render the live tool-call trace?"}
+{"category":"docs","expected_doc":"LangChain Tool Calling","expected_tool":"document_retrieval","id":"doc-07","query":"What does the LangChain agent scratchpad hold between max iterations?"}
+{"category":"docs","expected_doc":"SSE Streaming","expected_tool":"document_retrieval","id":"doc-08","query":"How does EventSource reconnect and stream tokens after a drop?"}
+{"category":"docs","expected_doc":"Postgres Memory Schema","expected_tool":"document_retrieval","id":"doc-09","query":"How do the Postgres trigram index and ILIKE rank project documents?"}
+{"category":"docs","expected_doc":"Caching Strategy","expected_tool":"document_retrieval","id":"doc-10","query":"When does a cache hit skip the language model entirely?"}
+{"category":"docs","expected_doc":"Prompt Optimization","expected_tool":"document_retrieval","id":"doc-11","query":"How should concise citations to grounded sources look in answers?"}
+{"category":"docs","expected_doc":"Frontend Chat UI","expected_tool":"document_retrieval","id":"doc-12","query":"How does React fetch with ReadableStream render reasoning live?"}
+{"category":"docs","expected_doc":"LangChain Tool Calling","expected_tool":"document_retrieval","id":"doc-13","query":"What is the agent policy for interleaving reasoning and tool invocations?"}
+{"category":"docs","expected_doc":"SSE Streaming","expected_tool":"document_retrieval","id":"doc-14","query":"Which SSE event types exist: token, tool_start, tool_end and done?"}
+{"category":"docs","expected_doc":"Postgres Memory Schema","expected_tool":"document_retrieval","id":"doc-15","query":"How is conversation memory stored across messages with roles?"}
+{"category":"docs","expected_doc":"Caching Strategy","expected_tool":"document_retrieval","id":"doc-16","query":"When does the stored response expire given its TTL interval?"}
+{"category":"docs","expected_doc":"Prompt Optimization","expected_tool":"document_retrieval","id":"doc-17","query":"Why keep the system prompt short for token budgets?"}
+{"category":"docs","expected_doc":"Frontend Chat UI","expected_tool":"document_retrieval","id":"doc-18","query":"How does the TypeScript chat UI render streamed input with abort?"}
+{"category":"docs","expected_doc":"LangChain Tool Calling","expected_tool":"document_retrieval","id":"doc-19","query":"What is the agent tool-calling policy for read-only questions?"}
+{"category":"docs","expected_doc":"SSE Streaming","expected_tool":"document_retrieval","id":"doc-20","query":"How does the events generator yield data frames to the browser?"}
+{"category":"docs","expected_doc":"Postgres Memory Schema","expected_tool":"document_retrieval","id":"doc-21","query":"Which columns do the documents hold: title, content and source link?"}
+{"category":"docs","expected_doc":"Caching Strategy","expected_tool":"document_retrieval","id":"doc-22","query":"How is the cache key built from the normalized question?"}
+{"category":"docs","expected_doc":"Prompt Optimization","expected_tool":"document_retrieval","id":"doc-23","query":"Why limit stored history to twelve recent turns?"}
+{"category":"docs","expected_doc":"Frontend Chat UI","expected_tool":"document_retrieval","id":"doc-24","query":"How does the React chat window handle abort and busy state while loading?"}
+{"category":"docs","expected_doc":"Postgres Memory Schema","expected_tool":"document_retrieval","id":"doc-25","query":"What does the trigram extension do for fast text search?"}
+{"category":"web","expected_tool":"web_search","id":"web-01","query":"What is the latest news on the 2026 election?"}
+{"category":"web","expected_tool":"web_search","id":"web-02","query":"What is the current price of Nvidia stock today?"}
+{"category":"web","expected_tool":"web_search","id":"web-03","query":"What happened in markets today?"}
+{"category":"web","expected_tool":"web_search","id":"web-04","query":"Who won yesterday's football match? Latest score?"}
+{"category":"web","expected_tool":"web_search","id":"web-05","query":"Breaking story: what is happening with interest rates right now?"}
+{"category":"web","expected_tool":"web_search","id":"web-06","query":"What is the weather in London today?"}
+{"category":"web","expected_tool":"web_search","id":"web-07","query":"What is Tesla's current stock price?"}
+{"category":"web","expected_tool":"web_search","id":"web-08","query":"Latest release date for the new phone?"}
+{"category":"web","expected_tool":"web_search","id":"web-09","query":"What did the central bank announce today about rates?"}
+{"category":"web","expected_tool":"web_search","id":"web-10","query":"Who won the 2025 championship?"}
+{"category":"web","expected_tool":"web_search","id":"web-11","query":"Current gold price per ounce today?"}
+{"category":"web","expected_tool":"web_search","id":"web-12","query":"What is the news on oil prices this week?"}
+{"category":"web","expected_tool":"web_search","id":"web-13","query":"How is the equity index performing today?"}
+{"category":"web","expected_tool":"web_search","id":"web-14","query":"What are today's headlines in technology?"}
+{"category":"web","expected_tool":"web_search","id":"web-15","query":"Did it rain in Paris today? Current conditions?"}
+{"category":"multi","expected_first":"calculator","expected_tools":["calculator","document_retrieval"],"id":"multi-01","query":"Calculate 15% of 200, then check the project docs on caching to explain the result"}
+{"category":"multi","expected_first":"calculator","expected_tools":["calculator","document_retrieval"],"id":"multi-02","query":"Calculate 9*9, then tell me what the SSE docs say about token streams"}
+{"category":"multi","expected_first":"sql_query","expected_tools":["sql_query","document_retrieval"],"id":"multi-03","query":"What does the Postgres schema doc say, and how many messages exist? SELECT COUNT(*) FROM messages"}
+{"category":"multi","expected_first":"sql_query","expected_tools":["sql_query","document_retrieval"],"id":"multi-04","query":"Run SQL: SELECT title FROM documents LIMIT 3, then summarize what the caching docs say"}
+{"category":"multi","expected_first":"document_retrieval","expected_tools":["document_retrieval","calculator"],"id":"multi-05","query":"Explain LangChain tool calling, then multiply 7*6 to illustrate"}
+{"category":"multi","expected_first":"document_retrieval","expected_tools":["document_retrieval","web_search"],"id":"multi-06","query":"What is the latest stock price today and what does the response cache doc say about saved quotes?"}
+{"category":"multi","expected_first":"calculator","expected_tools":["calculator","web_search"],"id":"multi-07","query":"Search the web for today's weather and calculate 32*9/5 plus 32"}
+{"category":"multi","expected_first":"document_retrieval","expected_tools":["document_retrieval","web_search"],"id":"multi-08","query":"How does SSE streaming work and what is the latest browser support news?"}
+{"category":"multi","expected_first":"sql_query","expected_tools":["sql_query","calculator"],"id":"multi-09","query":"List the message counts with SQL: SELECT COUNT(*) FROM messages, then calculate the average of 10, 20 and 30"}
+{"category":"multi","expected_first":"calculator","expected_tools":["calculator","document_retrieval"],"id":"multi-10","query":"What is 100/4? Also explain the prompt optimization doc"}
